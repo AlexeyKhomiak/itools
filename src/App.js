@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+﻿import React, { Suspense } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Body from './components/Body/Body';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function Page() {
+    return (
+
+        <div className="App">
+                            
+            <Header />
+
+            <Navbar />
+
+            <Body />
+
+        </div>
+
+    );
 }
 
-export default App;
+// loading component for suspense fallback
+const Loader = () => (
+    <div className="App">
+        <div>loading...</div>
+    </div>
+);
+
+// here app catches the suspense from page in case translations are not yet loaded
+export default function App() {
+    return (
+        <Suspense fallback={<Loader />}>
+            <Page />
+        </Suspense>
+    );
+}
