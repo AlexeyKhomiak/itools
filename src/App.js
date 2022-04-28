@@ -3,21 +3,21 @@ import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Body from './components/Body/Body';
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function Page() {
     return (
-
-        <div className="App">
+        <Router>
+            <div className="App">
                             
-            <Header />
+                <Header />
 
-            <Navbar />
+                <Navbar />
 
-            <Body />
+                <Body />
 
-        </div>
-
+            </div>
+        </Router>
     );
 }
 

@@ -1,8 +1,8 @@
 ﻿import React from 'react';
 import s from './Body.module.css';
-//import StringLength from './StringLength/StringLength';
-//import CaseConverter from './CaseConverter/CaseConverter';
-//import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import StringLength from './StringLength/StringLength';
+import CaseConverter from './CaseConverter/CaseConverter';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 //const routes = [
 //    {
@@ -24,11 +24,16 @@ import s from './Body.module.css';
 //    }
 //];
 
-const Body = () => {
+const Body = (props) => {
     
     return (
         <div>
             <div>
+                <Routes>
+                    <Route path='/' element={<StringLength />} />
+                    <Route path='/StringLength' element={<StringLength/>} />
+                    <Route path='/CaseConverter' element={<CaseConverter/>} />
+                </Routes>
                 {/*<Routes>*/}
                 {/*    {routes.map((route, index) => (*/}
                 {/*        <Route*/}
