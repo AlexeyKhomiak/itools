@@ -2,9 +2,9 @@ import React from 'react';
 import s from './Language.module.css';
 import { useTranslation } from 'react-i18next';
 
-
 //https://react.i18next.com/latest/using-with-hooks
 //https://github.com/i18next/react-i18next/tree/master/example/react
+
 // use hoc for class based components
 //class LegacyWelcomeClass extends Component {
 //    render() {

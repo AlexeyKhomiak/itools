@@ -1,11 +1,14 @@
 {
   "Navbar": {
-    "string_length": "Подсчет длины строки",
+    "StringLength": "Подсчет длины строки",
     "CaseConverter": "Преобразователь регистра"
   },
   "StringLength": {
     "title": "Подсчет длины строки",
     "textarea": "Введите строку",
-    "btn_count": "Подсчитать"
+    "btnCount": "Подсчитать"
+  },
+  "CaseConverter": {
+    "title": "Конвертер регистров"
   }
 }

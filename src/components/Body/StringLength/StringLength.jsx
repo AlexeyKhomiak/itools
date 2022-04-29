@@ -12,7 +12,7 @@ const StringLength = () => {
                 <form method="post">
                     <textarea name="Data" rows="8" cols="80" placeholder={t('StringLength.textarea')} />
                     <br/>
-                    <input type="submit" value={t('StringLength.btn_count') } />
+                    <input type="submit" value={t('StringLength.btnCount') } />
                 </form>
             </div>
         </div>
