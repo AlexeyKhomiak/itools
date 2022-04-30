@@ -15,6 +15,9 @@ const StringLength = () => {
                     <input type="submit" value={t('StringLength.btnCount') } />
                 </form>
             </div>
+            <div className={s.result}>
+                test
+            </div>
         </div>
     );
 }
