@@ -1,0 +1,14 @@
+{
+  "Navbar": {
+    "StringLength": "Підрахунок довжини рядка",
+    "CaseConverter": "Перетворювач регістру"
+  },
+  "StringLength": {
+    "title": "Підрахунок довжини рядка",
+    "textarea": "Введіть рядок",
+    "btnCount": "Підрахувати"
+  },
+  "CaseConverter": {
+    "title": "Конвертер регістрів"
+  }
+}

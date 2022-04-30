@@ -1,0 +1,14 @@
+{
+  "Navbar": {
+    "StringLength": "Calculate String Length",
+    "CaseConverter": "Case Converter"
+  },
+  "StringLength": {
+    "title": "Calculate String Length",
+    "textarea": "Enter Text to Calculate Length",
+    "btnCount": "Calculate"
+  },
+  "CaseConverter": {
+    "title": "Case Converter"
+  }
+}
