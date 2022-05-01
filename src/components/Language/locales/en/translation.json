@@ -6,7 +6,8 @@
   "StringLength": {
     "title": "Calculate String Length",
     "textarea": "Enter Text to Calculate Length",
-    "btnCount": "Calculate"
+    "btnCount": "Calculate",
+    "result": "Your string is <strong> {{resultChar}} </strong> characters long."
   },
   "CaseConverter": {
     "title": "Case Converter"

@@ -6,7 +6,8 @@
   "StringLength": {
     "title": "Підрахунок довжини рядка",
     "textarea": "Введіть рядок",
-    "btnCount": "Підрахувати"
+    "btnCount": "Підрахувати",
+    "result": "Строка містить <strong> {{resultChar}} </strong> символів."
   },
   "CaseConverter": {
     "title": "Конвертер регістрів"

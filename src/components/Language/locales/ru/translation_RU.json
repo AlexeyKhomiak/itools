@@ -6,7 +6,8 @@
   "StringLength": {
     "title": "Подсчет длины строки",
     "textarea": "Введите строку",
-    "btnCount": "Подсчитать"
+    "btnCount": "Подсчитать",
+    "result": "Введенная cтрока длиной <strong> {{resultChar}} </strong> символов."
   },
   "CaseConverter": {
     "title": "Конвертер регистров"

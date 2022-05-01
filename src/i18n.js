@@ -4,7 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 import translationUA from "../src/components/Language/locales/ua/translation.json";
 import translationEN from "../src/components/Language/locales/en/translation.json";
-import translationRU from "../src/components/Language/locales/ru/translation.json";
+import translationRU from "../src/components/Language/locales/ru/translation_RU.json";
 
 
 const resources = {
@@ -32,7 +32,7 @@ i18n
     .init({
     resources,
     fallbackLng: 'en',
-    debug: true,
+    /*debug: true,*/
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
