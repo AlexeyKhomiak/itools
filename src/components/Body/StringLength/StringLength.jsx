@@ -7,7 +7,7 @@ const StringLength = () => {
     return (
         <div className={s.content}>
             <div>
-                <div>Підрахунок довжини рядка {t('StringLength.title')}</div>
+                <div>{t('StringLength.title')}</div>
 
                 <form method="post">
                     <textarea name="Data" rows="8" cols="80" placeholder={t('StringLength.textarea')} />
