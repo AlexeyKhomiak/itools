@@ -3,11 +3,19 @@
     "StringLength": "Подсчет длины строки",
     "CaseConverter": "Преобразователь регистра"
   },
+  "units": {
+    "byte": "байт",
+    "char": "символов"
+  },
   "StringLength": {
     "title": "Подсчет длины строки",
     "textarea": "Введите строку",
     "btnCount": "Подсчитать",
-    "result": "Введенная cтрока длиной <strong> {{resultChar}} </strong> символов."
+    "result": {
+      "char": "Длинна строки:",
+      "size": "Размер строки:",
+      "all": "Размер: <strong> {{resultChar}} </strong> B, 2 символов"
+    }
   },
   "CaseConverter": {
     "title": "Конвертер регистров"

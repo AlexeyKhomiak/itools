@@ -3,11 +3,19 @@
     "StringLength": "Calculate String Length",
     "CaseConverter": "Case Converter"
   },
+  "units": {
+    "byte": "B",
+    "char": "Characters"
+  },
   "StringLength": {
     "title": "Calculate String Length",
     "textarea": "Enter Text to Calculate Length",
     "btnCount": "Calculate",
-    "result": "Your string is <strong> {{resultChar}} </strong> characters long."
+    "result": {
+      "char": "String length:",
+      "size": "String size:",
+      "all": "Size: <strong> {{resultChar}} </strong> B, 2 Characters"
+    }
   },
   "CaseConverter": {
     "title": "Case Converter"

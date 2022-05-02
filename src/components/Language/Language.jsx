@@ -15,7 +15,7 @@ function Language() {
     return (
         <div className={s.lang}>
             <div>
-                <button type="button" onClick={() => changeLanguage('ua')}>
+                <button type="button" value="ua" onClick={() => changeLanguage('ua')}>
                     ua
                 </button>
                 <button type="button" onClick={() => changeLanguage('en')}>

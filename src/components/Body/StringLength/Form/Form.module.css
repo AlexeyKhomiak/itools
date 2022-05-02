@@ -1,7 +1,16 @@
-.form {
-    
+.content {
+    width: 50%;
+}
+
+form textarea {
+    width: 100%;
 }
 
 .result {
-
 }
+
+.resultSmall {
+    font-size: small;
+    text-align: end;
+}
+

@@ -3,11 +3,19 @@
     "StringLength": "Підрахунок довжини рядка",
     "CaseConverter": "Перетворювач регістру"
   },
+  "units": {
+    "byte": "байт",
+    "char": "символів"
+  },
   "StringLength": {
     "title": "Підрахунок довжини рядка",
     "textarea": "Введіть рядок",
     "btnCount": "Підрахувати",
-    "result": "Строка містить <strong> {{resultChar}} </strong> символів."
+    "result": {
+      "char": "Довжина рядку:",
+      "size": "Розмір рядку:",
+      "all": "Розмір: <strong> {{resultChar}} </strong> B, 2 символів"
+    }
   },
   "CaseConverter": {
     "title": "Конвертер регістрів"

@@ -1,13 +1,12 @@
-﻿import React from 'react';
-import strLenChar from './strlen';
+import React from 'react';
+import { strLenSize, strLenChar } from './strlen';
 import s from './Form.module.css';
-import { withTranslation, Trans } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 
 class StringLengthForm extends React.Component {
-    constructor(props) {        
+    constructor(props) {
         super(props);
         this.state = { value: '' };
-        
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -15,30 +14,36 @@ class StringLengthForm extends React.Component {
         this.setState({ value: event.target.value });
     }
     handleSubmit(event) {
-        //alert('Сочинение отправлено: ' + this.state.value);
+        //alert(this.state.value);
         event.preventDefault();
     }
-    
+
     render() {
         const { t } = this.props;
+        let resultSize = strLenSize(this.state.value);
         let resultChar = strLenChar(this.state.value);
+        //let Calculate = () => {
+        //}
+
         return (
-            
-            <div>
+            <div className={ s.content }>
                 <form onSubmit={this.handleSubmit}>
-                    <textarea name="Data" rows="8" cols="80" placeholder={t('StringLength.textarea')}
-                            value={this.state.value} onChange={this.handleChange} />
-                    <br />
-                    <input type="submit" value={t('StringLength.btnCount')} />
-                    
+                    <textarea name="Data" rows="8" placeholder={t('StringLength.textarea')}
+                        value={this.state.value} onChange={this.handleChange} />
+                    {/*<br />*/}
+                    {/*<input type="submit" value={t('StringLength.btnCount')} />*/}
+                    {/*<br />*/}
+                    {/*<button onClick={Calculate}>{t('StringLength.btnCount')}</button>*/}
                 </form>
-                <br/>
+                <div className={s.resultSmall}>
+                    UTF-8:&nbsp;
+                    <strong> {resultSize} </strong> {t('units.byte')},
+                    <strong> {resultChar} </strong> {t('units.char')}
+                </div>
+                <br />
                 <div className={s.result}>
-                    <Trans i18nKey="StringLength.result">
-                        {{ resultChar }}
-                    </Trans>
+                    {t('StringLength.result.char')} <strong> {resultChar} </strong> {t('units.char')}
                 </div >
-                
             </div>
         );
     }
