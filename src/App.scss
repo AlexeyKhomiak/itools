@@ -1,0 +1,18 @@
+@import 'components/Body/Body.module.scss';
+@import 'components/Body/StringLength/Form/Form.module.scss';
+
+
+
+$bgc: #fafafa;
+$c: #303030;
+
+.App {
+    display: grid;
+    grid-template-areas:
+        "h h"
+        "n c";
+    /*grid-template-rows: 1fr 10fr;*/
+    grid-template-columns: 2fr 10fr;
+  
+}
+
