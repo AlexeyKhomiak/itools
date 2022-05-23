@@ -11,6 +11,7 @@
     "title": "Calculate String Length",
     "textarea": "Enter Text to Calculate Length",
     "btnCount": "Calculate",
+    "checkBoxAuto": "Auto calculation",
     "result": {
       "char": "String length:",
       "size": "String size:",

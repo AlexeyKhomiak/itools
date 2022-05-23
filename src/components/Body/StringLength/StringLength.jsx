@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import s from './StringLength.module.css';
 import Form from './Form/Form';
 import { useTranslation } from 'react-i18next';

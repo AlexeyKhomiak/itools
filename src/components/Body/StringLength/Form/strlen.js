@@ -1,8 +1,8 @@
-export function strLenChar(str) {
+export function getStringLengthChar(str) {
     return str.length;
 }
 
-export function strLenSize(str) {
+export function getStringLengthSize(str) {
 	//assuming the String is UCS-2(aka UTF-16) encoded
 	var n = 0;
 	for (var i = 0, l = str.length; i < l; i++) {

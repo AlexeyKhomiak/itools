@@ -1,6 +1,6 @@
-﻿import React from 'react';
+import React from 'react';
 import s from './CaseConverter.module.css';
-import { useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const CaseConverter = () => {
     const { t } = useTranslation();
